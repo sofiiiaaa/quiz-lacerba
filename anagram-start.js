@@ -7,8 +7,8 @@
 	*/
 
 
-	const primaParola = "manuel";
-	const secondaParola = "giraffa";
+	const primaParola = "cinema";
+	const secondaParola = "iceman";
 	let anagramma= false;
 
 	const primaArray = primaParola.split("");
