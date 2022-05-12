@@ -3,3 +3,13 @@
 	* Esempio:
 	* reverse("ciao") => "oaic"
 	*/
+	
+	function reverseStr (string){
+		let result;
+		result= string.split("").reverse();
+		console.log(result.join(""));
+		return result.join("");
+	}
+
+
+	reverseStr ("ciao")

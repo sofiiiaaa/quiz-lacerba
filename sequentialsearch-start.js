@@ -30,3 +30,28 @@ function populateArray() {
 populateArray();
 
 // INIZIA A SCRIVERE DA QUI
+
+function findNumber(number, myArr){
+
+	let result = myArr.find((element) => element===number);
+
+	// if (result >0){
+	// 	return true;
+	// } else (result === undefined){
+	// 	return false;
+
+	// }
+
+	return !(result === undefind)
+
+
+
+
+
+
+	console.log(myArr.find((element) => element === number))
+	return (myArr.find((element) => element === number))
+
+}
+
+findNumber(2, arrayOfNumber)

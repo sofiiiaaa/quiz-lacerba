@@ -7,24 +7,30 @@
 	*/
 
 
-	const primaParola = "cinema";
-	const secondaParola = "iceman";
-	let anagramma= false;
 
-	const primaArray = primaParola.split("");
-	const secondaArray = secondaParola.split("");
+	
+	
+	function anagram(primaStr, secondaStr) {
+	// let anagramma= false;
+	// for (i=0; i<primaArray.length; i++ ){
+	// 	if(secondaArray.includes(primaArray[i]) && primaArray.length===secondaArray.length && primaArray.includes(secondaArray[i])){
+	// 		anagramma= true;
+	// 	}	else{
+	// 		anagramma= false;
+	// 	}	
+	// }
+	// if (anagramma == true){
+	// 	console.log("le due stringhe sono anagrammi");
+	// } else {
+	// 	console.log("le due stringhe non sono anagrammi");
 
+	// }
+	
+	let primaArr = primaStr.split("");
+	let secondaArr = secondaStr.split("");
+	let result= primaArr.sort().join("")===secondaArr.sort().join("");
+	console.log(result);
+	return result;
+}
 
-	for (i=0; i<primaArray.length; i++ ){
-		if(secondaArray.includes(primaArray[i]) && primaArray.lenght===secondaArray.lenght && primaArray.includes(secondaArray[i])){
-			anagramma= true;
-		}	else{
-			anagramma= false;
-		}	
-	}
-	if (anagramma == true){
-		console.log("le due stringhe sono anagrammi");
-	} else {
-		console.log("le due stringhe non sono anagrammi");
-
-	}
+anagram("cinema","iceman");
